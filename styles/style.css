@@ -28,16 +28,16 @@ body {
 
 .navbar-custom {
     background-color: #111213 !important;
-    opacity: 0.85 !important;
+    opacity: 0.95 !important;
 }
 
 .navbar-nav>li {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
 }
 
 .nav-link {
-    color: white !important;
+    color: #8BDC00 !important;
     font-family: peridot-pe-variable, sans-serif;
     font-style: normal;
     font-variation-settings: "ital" 0, "wdth" 120, "wght" 950;
@@ -46,9 +46,29 @@ body {
     text-align: center;
 }
 
-.nav-link:hover {
-    color: #8BDC00 !important;
+.active {
+    text-decoration: underline;
 }
+
+.nav-link:hover {
+    color: white !important;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.212);
+}
+
+/* .glow:hover {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } */
 
 .logo {
     width: 50px;
@@ -73,7 +93,7 @@ body {
 }
 
 .about-me-heading {
-    font-size: 3vw;
+    font-size: 7vw;
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -95,6 +115,94 @@ body {
     float: right;
 }
 
+.artifact-area {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.artifact-heading {
+    font-size: 7vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.image-gallery {
+    margin-bottom: 100px;
+
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 50vw;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    height: 400px;
+    width: 600px;
+}
+
+.artifact-contribution {
+    font-size: 16px;
+    text-align: center;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(155, 155, 155);
+}
+
+.artifact-description {
+    font-size: 24px;
+    text-align: left;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+footer {
+    background-color: #111213 !important;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.contact {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: rgb(107, 107, 107);
+}
+
+.contact:hover {
+    color: white;
+}
+
+.bi-youtube {
+    font-size: 25px;
+}
+
+.bi-envelope-fill {
+    font-size: 23px;
+}
+
+.bi-linkedin {
+    font-size: 20px;
+}
+
+.bi-file-earmark-person-fill {
+    font-size: 20px;
+}
 
 /* Scrollbar stuff */
 /* width */
@@ -114,10 +222,24 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: #2890FF;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #2890FF;
+    background: white;
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #FF3352; /* Green thumb for horizontal scrollbar */
+  }
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb-horizontal:hover {
+    background: white;
 }
