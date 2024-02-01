@@ -55,21 +55,6 @@ body {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.212);
 }
 
-/* .glow:hover {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */
-
 .logo {
     width: 50px;
     height: 50px;
@@ -121,9 +106,9 @@ body {
 }
 
 .artifact-heading {
-    font-size: 7vw;
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    font-weight: 500;
+    font-size: 6vw;
+    font-family: loos-extended, sans-serif;
+    font-weight: 800;
     font-style: normal;
     text-align: center;
     margin-top: 50px;
@@ -170,6 +155,7 @@ div.scroll-container img {
 
 footer {
     background-color: #111213 !important;
+    opacity: 0.95 !important;
 }
 
 .footer-content {
@@ -233,13 +219,14 @@ footer {
 /* Horizontal scrollbar */
 ::-webkit-scrollbar-horizontal {
     height: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:horizontal {
-    background-color: #FF3352; /* Green thumb for horizontal scrollbar */
-  }
+}
 
-  /* Handle on hover */
-::-webkit-scrollbar-thumb-horizontal:hover {
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #FF3352;
+    /* Green thumb for horizontal scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover:horizontal {
     background: white;
 }
